@@ -1,0 +1,89 @@
+{
+  "TC01_homeTitle": {
+    "expectedTitle": "Demo Web Shop"
+  },
+  "TC02_homeMenuVisible": {
+    "menuItem": "Shop"
+  },
+  "TC03_scrollToFooter": {
+    "footerText": "© AwesomeQA"
+  },
+  "TC04_clickContactUs": {
+    "contactPageTitle": "Contact Us"
+  },
+ 
+  "TC05_validLogin": {
+    "username": "validUser",
+    "password": "validPass"
+  },
+  "TC06_invalidLogin": {
+    "username": "invalidUser",
+    "password": "wrongPass"
+  },
+  "TC07_emptyPassword": {
+    "username": "validUser",
+    "password": ""
+  },
+  "TC08_logoutAfterLogin": {
+    "username": "validUser",
+    "password": "validPass"
+  },
+ 
+  "TC09_validRegistration": {
+    "firstName": "Sai"
+    "lastName": "Santhosh",
+    "email": "test1@awesomeqa.com",
+    "password": "Pass@123",
+    "phone": "9999999999"
+  },
+  "TC10_registrationMissingEmail": {
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "",
+    "password": "Pass@123",
+    "phone": "8888888888"
+  },
+  "TC11_registrationInvalidPhone": {
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "test2@awesomeqa.com",
+    "password": "Pass@123",
+    "phone": "abc123"
+  },
+  "TC12_registrationExistingUser": {
+    "firstName": "Old",
+    "lastName": "User",
+    "email": "existing@awesomeqa.com",
+    "password": "Pass@123",
+    "phone": "7777777777"
+  },
+ 
+  "TC13_selectCategoryDropdown": {
+    "category": "Electronics"
+  },
+  "TC14_filterByPriceDropdown": {
+    "filter": "Price: Low to High"
+  },
+  "TC15_scrollToProduct": {
+    "productName": "Awesome Phone"
+  },
+  "TC16_addProductToCart": {
+    "productName": "Awesome Headphones"
+  },
+ 
+  "TC17_verifyCartItemCount": {
+    "productName": "Awesome Headphones",
+    "expectedCount": "1"
+  },
+  "TC18_updateQuantityDropdown": {
+    "productName": "Awesome Headphones",
+    "quantity": "2"
+  },
+  "TC19_removeItemFromCart": {
+    "productName": "Awesome Headphones"
+  },
+  "TC20_checkoutButtonEnabled": {
+    "productName": "Awesome Headphones"
+  }
+}
+ 
