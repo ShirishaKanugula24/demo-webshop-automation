@@ -3,12 +3,13 @@ package tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import Base.TestBase;
 import pages.homepage;
 import utils.JsonDataProvider;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import Base.TestBase;
 
 import java.util.Map;
 
