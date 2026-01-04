@@ -1,6 +1,5 @@
 package utils;
 
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
@@ -8,12 +7,18 @@ public class ExtentManager {
 
     private static ExtentReports extent;
 
-    public static ExtentReports getExtentReport() {
+    // Prevent object creation
+    private ExtentManager() {}
+
+    public static synchronized ExtentReports getExtentReport() {
 
         if (extent == null) {
 
+            String reportPath = System.getProperty("user.dir")
+                    + "/test-output/ExtentReport.html";
+
             ExtentSparkReporter reporter =
-                    new ExtentSparkReporter("test-output/ExtentReport.html");
+                    new ExtentSparkReporter(reportPath);
 
             reporter.config().setReportName("Automation Test Report");
             reporter.config().setDocumentTitle("Demo Web Shop Execution");
@@ -21,9 +26,7 @@ public class ExtentManager {
             extent = new ExtentReports();
             extent.attachReporter(reporter);
         }
+
         return extent;
     }
 }
-
-
-
